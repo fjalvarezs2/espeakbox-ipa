@@ -198,8 +198,8 @@ func voicesHandler(w http.ResponseWriter, r *http.Request) {
 		}
 
 		voices := new(Voices)
-		// leave out the header value
-		voices.Names = strings.Split(voicesBuf.String(), "\n")[1:]
+		// leave out the header value and trailing empty line
+		voices.Names = strings.Split(strings.TrimSpace(voicesBuf.String()), "\n")[1:]
 
 		js, err := json.Marshal(voices)
 		if err != nil {
