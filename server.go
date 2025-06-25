@@ -117,7 +117,7 @@ func buildEncodeCmd(values *url.Values, w *http.ResponseWriter) (cmd *exec.Cmd, 
 }
 
 // Handles a request for synthesized speech. Build the synthesizer and encoder
-// comands. Pipe the first to the second. Pipe the encoded stream out as the
+// commands. Pipe the first to the second. Pipe the encoded stream out as the
 // response. Supports URL arguments:
 // text: string to synthesize (required)
 // pitch: [0, 99] default: 50
