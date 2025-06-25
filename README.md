@@ -27,7 +27,7 @@ GET /speech?text=<utterance>
             [&pitch=<0,99; default 50>]
             [&speed=<80,450; default 175 wpm>]
             [&voice=<name; default en>]
-            [&encoding=<mp3|opus; default mp3>]
+            [&encoding=<mp3|opus|wav; default mp3>]
 ```
 
 Response:
